@@ -6,8 +6,11 @@ func list() {
 	// Creates a list of ints and prints out the index and the value
 	fmt.Println("\nYo this is the list function")
 	var myList = [3]int32{1, 2, 3}
-	for i := 0; i < len(myList); i++ {
-		fmt.Println(i, myList[i])
+	// for i := 0; i < len(myList); i++ {
+	// 	fmt.Println(i, myList[i])
+	// }
+	for i, nums := range myList {
+		fmt.Println(i, nums)
 	}
 }
 
